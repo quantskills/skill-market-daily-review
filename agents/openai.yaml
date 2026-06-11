@@ -1,0 +1,4 @@
+interface:
+  display_name: "Market Daily Review"
+  short_description: "Generate A-share daily market review reports from Pandadata."
+  default_prompt: "Use $market-daily-review to generate today's A-share after-close market review."
