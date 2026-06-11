@@ -1,5 +1,7 @@
 # 📰 Market Daily Review Skill
 
+**简体中文** | [English](README.en.md)
+
 > 收盘后一句话生成 A 股当日复盘：指数与估值、市场宽度、行业概念热点、龙虎榜、大宗、两融、北向 —— 每个数字可溯源，支持定时自动生成。
 
 <p align="center">
@@ -19,7 +21,7 @@
 
 可以手动触发（"今天复盘一下"），也可以挂成交易日收盘后的定时任务，每天 18:30 自动产出 `reports/daily/YYYYMMDD.md`。
 
-> 数据契约一律来自姊妹技能 [`pandadata-api`](https://github.com/quantskills/pandadata-api)。
+> 数据契约一律来自姊妹技能 [`pandadata-api`](https://github.com/quantskills/skill-pandadata-api)。
 
 ---
 
