@@ -1,6 +1,11 @@
 ---
 name: market-daily-review
-description: Generate A-share end-of-day market review reports with Pandadata data, covering trade-date checks, index performance and valuation, market breadth, limit-up/down sentiment, industries/concepts, 龙虎榜, block trades, margin financing, northbound holdings, risk notes, and optional scheduled after-close automation. Use when the user asks for 今日复盘, 收盘总结, 每日市场报告, A股复盘, 龙虎榜复盘, 北向资金动向, or to set up an automated daily market review.
+description: Generate A-share end-of-day market review reports with Pandadata data,
+  covering trade-date checks, index performance and valuation, market breadth, limit-up/down
+  sentiment, industries/concepts, 龙虎榜, block trades, margin financing, northbound
+  holdings, risk notes, and optional scheduled after-close automation. Use when the
+  user asks for 今日复盘, 收盘总结, 每日市场报告, A股复盘, 龙虎榜复盘, 北向资金动向, or to set up an automated
+  daily market review.
 metadata:
   organization: QuantSkills
   organization_url: https://github.com/quantskills
@@ -8,6 +13,29 @@ metadata:
   repository_url: https://github.com/quantskills/skill-market-daily-review
   project_type: skill
   collection: market-daily-review
+quantSkills:
+  project_type: skill
+  category: monitor
+  tags:
+  - a-share
+  - daily-review
+  - market-breadth
+  - sentiment
+  - pandadata
+  platforms:
+  - claude-code
+  - codex
+  - openclaw
+  - cursor
+  status: stable
+  validation_level: runnable
+  maintainer_type: official
+  summary_zh: 收盘后一句话生成 A 股当日复盘：指数与估值、市场宽度、行业概念热点、龙虎榜、大宗、两融、北向 —— 每个数字可溯源，支持定时自动生成。
+  summary_en: A-share end-of-day review skill covering indexes, valuation, breadth,
+    sentiment, sectors, themes, and capital-flow clues.
+  license: GPL-3.0
+  requires:
+  - skill-pandadata-api
 ---
 
 # Market Daily Review
