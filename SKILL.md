@@ -1,6 +1,7 @@
 ---
 name: market-daily-review
 description: Generate A-share end-of-day market review reports with Pandadata data, covering trade-date checks, index performance and valuation, market breadth, limit-up/down sentiment, industries/concepts, 龙虎榜, block trades, margin financing, northbound holdings, risk notes, and optional scheduled after-close automation. Use when the user asks for 今日复盘, 收盘总结, 每日市场报告, A股复盘, 龙虎榜复盘, 北向资金动向, or to set up an automated daily market review.
+license: GPL-3.0-only
 metadata:
   organization: QuantSkills
   organization_url: https://github.com/quantskills
@@ -8,6 +9,8 @@ metadata:
   repository_url: https://github.com/quantskills/skill-market-daily-review
   project_type: skill
   collection: market-daily-review
+  creator: abgyjaguo
+  maintainer: abgyjaguo
 ---
 
 # Market Daily Review
