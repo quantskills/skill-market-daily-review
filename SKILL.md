@@ -42,6 +42,31 @@ quantSkills:
   - skill-pandadata-api
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "补充复盘口径或特别要求（可选）",
+    "required": false
+  },
+  "fields": [
+    {
+      "key": "date",
+      "label": "复盘日期",
+      "type": "date",
+      "help": "留空时使用最近已完成的 A 股交易日"
+    },
+    {
+      "key": "focus",
+      "label": "重点关注",
+      "type": "text",
+      "placeholder": "例如：北向持仓、半导体板块、龙虎榜"
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}执行 A 股收盘复盘。{{#date}}以 {{date}} 为目标日期。{{/date}}未指定日期时以最近已完成的 A 股交易日为目标日期。{{#focus}}重点关注 {{focus}}。{{/focus}}先核验交易日，再覆盖指数表现与估值、市场宽度、涨跌停情绪、行业与概念、龙虎榜、大宗交易、两融、北向持仓和风险提示，逐项标注数据接口与日期并说明滞后或缺失数据，输出中文报告。"
+}
+```
+
 # Market Daily Review
 
 Use this skill to generate factual A-share after-close review reports. Prefer Pandadata as the data source, keep every statistic traceable to an interface and data date, and never invent missing figures.
